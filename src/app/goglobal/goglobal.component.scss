@@ -18,18 +18,48 @@
 }
 
 .blocos{
-  background-color: rgb(122, 178, 211);
   position: absolute;
-  margin-left: 3%;
-  width: 94%;
+  display: flex;
+  margin-left: 2%;
+  width: 96%;
   height: 88%;
   top: 10%;
+  float: left;
+  justify-content: center;
 }
 
+.bloco-1,.bloco-2{
+  font-size: 25px;
+  color: aliceblue;
+  border-radius: 7px;
+  background-color: rgb(118, 119, 119);
+  width:40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  list-style: none;
+}
+
+.li{
+  margin-left: 25px;
+  margin-top: 25px;
+  width: 90%;
+  height: 70px;
+  justify-content: center;
+  border-bottom: 1px solid;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+}
+
+
 .bloco-1{
-  color: rgb(255, 255, 255);
+  flex: 1;
+  margin-right: 30px;
 }
 
 .bloco-2{
-  color: rgb(44, 101, 134)
+  flex: 1;
+  margin-right: 0px;
 }
