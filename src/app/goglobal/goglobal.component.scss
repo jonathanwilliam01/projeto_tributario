@@ -1,8 +1,8 @@
 .container{
-  margin-left: 27vh;
+  margin-left: 33vh;
   background-color: rgb(41, 49, 53);
   border-radius: 7px;
-  width: 85%;
+  width: 80%;
   height: 98%;
   top: 9px;
   position: absolute;
@@ -29,12 +29,13 @@
   justify-content: center;
 }
 
-.bloco-1,.bloco-2{
+.bloco-1,.bloco-2,.bloco-3{
   font-size: 25px;
   color: aliceblue;
   border-radius: 7px;
+  border: 1px solid rgb(116, 115, 115);
   background-color: rgb(118, 119, 119);
-  width:40%;
+  width:25%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -42,29 +43,32 @@
   box-shadow: 4px 3px 10px 0px black;
 }
 
-.li{
-  margin-left: 25px;
-  margin-top: 5px;
-  width: 90%;
-  height: 87px;
-  justify-content: center;
-  border-bottom: 1px solid;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-  box-sizing: border-box;
-  border-radius: 3px;
-}
-
 
 .bloco-1{
   flex: 1;
   margin-right: 30px;
+  background-image: url('https://wallpapercave.com/wp/wp10336952.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 
 .bloco-2{
   flex: 1;
+  margin-right: 30px;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Cristo_Redentor_-_Rio_de_Janeiro_-_20230321170956.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -600px;
+}
+
+.bloco-3{
+  flex:1;
   margin-right: 0px;
+  background-image: url('C:/Users/Embras/projeto_tributario/src/assets/Belo-Horizonte-Minas-Gerais-Brazil-Best-Wallpaper-122007.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: -550px;
 }
 
 a{
@@ -74,4 +78,47 @@ a{
 
 .li:hover{
   background-color: rgb(150, 148, 148);
+}
+
+.overlay {
+  position: absolute;
+  width: 32%;
+  border-radius: 7px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.overlay:hover {
+  opacity: 5;
+}
+
+.est{
+  margin-left: 10px;
+  font-size: 28px;
+  width: 200px;
+}
+
+.content {
+  position: absolute;
+  margin-left: 1%;
+  width: 30%;
+  top: 15px;
+  color: #fff; /* Cor do texto */
+  text-align: left;
+}
+
+.li{
+  margin-left: 25px;
+  margin-top: 5px;
+  width: 410px;
+  height: 60px;
+  justify-content: center;
+  border-bottom: 1px solid;
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 3px;
 }
