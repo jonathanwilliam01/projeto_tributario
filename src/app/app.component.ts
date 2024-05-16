@@ -14,7 +14,7 @@ import { HeaderComponent } from './header/header.component';
   providers: [ItemService]
 })
 export class AppComponent implements OnInit {
-title='teste'
+title='Tributario'
 
   selectedItem: any;
 
