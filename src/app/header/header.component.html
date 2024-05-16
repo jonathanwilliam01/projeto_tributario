@@ -1,6 +1,8 @@
 <div class="lateral_menu">
   <div class="logo">
+    <a (click)="reloadPage()">
     <img src="https://uploads-tiflux.s3.amazonaws.com/production/organizations/logo_dark_and_default_modes/9513/original/Logo_(white).png?1679506377">
+  </a>
   </div>
   <div class="menu">
    <li class="bot" *ngFor="let item of items" (click)="onItemClick(item)"> {{ item.name1}} </li>

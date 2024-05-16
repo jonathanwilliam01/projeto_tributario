@@ -1,19 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HeaderComponent } from './header/header.component';
 import { GoglobalComponent } from './goglobal/goglobal.component';
 import { ItemService } from './item.service';
+import { HeaderComponent } from './header/header.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, GoglobalComponent],
+  imports: [CommonModule, GoglobalComponent, HeaderComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   providers: [ItemService]
 })
 export class AppComponent implements OnInit {
+title='teste'
+
   selectedItem: any;
 
   constructor(private itemService: ItemService) {}
