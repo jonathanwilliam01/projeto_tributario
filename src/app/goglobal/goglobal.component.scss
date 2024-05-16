@@ -42,15 +42,16 @@
 
 .li{
   margin-left: 25px;
-  margin-top: 25px;
+  margin-top: 2px;
   width: 90%;
-  height: 70px;
+  height: 90px;
   justify-content: center;
   border-bottom: 1px solid;
   display: flex;
   position: relative;
   flex-direction: column;
   box-sizing: border-box;
+  border-radius: 3px;
 }
 
 
@@ -62,4 +63,13 @@
 .bloco-2{
   flex: 1;
   margin-right: 0px;
+}
+
+a{
+  text-decoration-line: none;
+  color:inherit
+}
+
+.li:hover{
+  background-color: rgb(150, 148, 148);
 }
