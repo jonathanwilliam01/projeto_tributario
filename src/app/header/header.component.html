@@ -3,11 +3,12 @@
     <img src="https://uploads-tiflux.s3.amazonaws.com/production/organizations/logo_dark_and_default_modes/9513/original/Logo_(white).png?1679506377">
   </div>
   <div class="menu">
-   <li class="bot"> GoGLobal </li>
+   <li class="bot" *ngFor="let item of items" (click)="onItemClick(item)"> {{ item.name1}} </li>
    <li class="bot"> IssOnline </li>
    <li class="bot"> E-gov </li>
    <li class="bot"> E-gov DEV </li>
    <li class="bot"> Config E-gov </li>
    <li class="bot"> Interfaces </li>
+   <li class="bot"> Link Uteis </li>
   </div>
 </div>

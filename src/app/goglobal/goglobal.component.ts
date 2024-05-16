@@ -1,12 +1,13 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-goglobal',
   standalone: true,
-  imports: [],
+  imports: [CommonModule],
   templateUrl: './goglobal.component.html',
-  styleUrl: './goglobal.component.scss'
+  styleUrls: ['./goglobal.component.scss']
 })
 export class GoglobalComponent {
-
+  @Input() item: any;
 }

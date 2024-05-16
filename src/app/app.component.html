@@ -1,3 +1,2 @@
-<router-outlet> </router-outlet>
-<app-header> </app-header>
-<app-goglobal></app-goglobal>
+<app-header></app-header>
+<app-goglobal *ngIf="selectedItem" [item]="selectedItem"></app-goglobal>
