@@ -4,7 +4,7 @@
   align-items: center;
   display: flex;
   height: 98vh;
-  width: 35vh;
+  width: 13%;
   border-radius: 5px;
   box-shadow: 4px 3px 10px 0px black;
 }
@@ -16,8 +16,8 @@ a{
 
 
 .logo{
-  width: 180px;
-  height: 80px;
+  width: 9%;
+  height: 80%;
   display: flex;
   top: 25px;
   position: absolute;
@@ -30,8 +30,8 @@ a{
       display: flex;
       flex-direction: column;
       align-items: flex-start;
-      width: 200px;
-      height: 400px;
+      width: 10%;
+      height: 100%;
       list-style: none;
       position: absolute;
       top: 150px;
@@ -40,13 +40,13 @@ a{
 .bot{
   font-size: 20px;
   padding-left: 15px;
-  margin-bottom: 20px;
+  margin-bottom: 10%;
   border-radius: 10px;
   justify-content: left;
   align-items: center;
   display: flex;
   width: 100%;
-  height: 40px;
+  height: 5%;
   color: rgb(233, 233, 233);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: bold;

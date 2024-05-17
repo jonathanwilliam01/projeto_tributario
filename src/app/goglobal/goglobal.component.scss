@@ -1,5 +1,5 @@
 .container{
-  margin-left: 40vh;
+  margin-left: 17%;
   background-color: rgb(41, 49, 53);
   border-radius: 7px;
   width: 80%;
@@ -60,7 +60,7 @@
   background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/4c/Cristo_Redentor_-_Rio_de_Janeiro_-_20230321170956.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -400px;
+  background-position: 90%;
 }
 
 .bloco-3{
@@ -69,7 +69,7 @@
   background-image: url('https://wallpapercave.com/wp/wp4201740.jpg');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: -350px;
+  background-position: 100%;
 }
 
 a{
@@ -111,10 +111,10 @@ a{
 }
 
 .li{
-  margin-left: 20px;
-  margin-top: 5px;
-  width: 290px;
-  height: 36px;
+  margin-left: 35px;
+  margin-top: 7px;
+  width: 45vh;
+  height: 6vh;
   justify-content: center;
   //border-bottom: 1px solid;
   display: flex;
