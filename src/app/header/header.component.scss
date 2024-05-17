@@ -16,12 +16,19 @@ a{
 
 
 .logo{
-  width: 9%;
-  height: 80%;
-  display: flex;
+  width: auto;
+  height: 100%;
   top: 25px;
   position: absolute;
-  flex-direction: column;
+  display: block;
+  cursor: pointer;
+}
+
+.logo img{
+  width: 100%;
+  height: auto;
+  top: 25px;
+  display: block;
   cursor: pointer;
 }
 
