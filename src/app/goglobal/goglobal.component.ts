@@ -8,6 +8,6 @@ import { CommonModule } from '@angular/common';
   templateUrl: './goglobal.component.html',
   styleUrls: ['./goglobal.component.scss']
 })
-export class GoglobalComponent {
-  @Input() item: any;
+export class GoGlobalComponent {
+  currentComponent = 'GoGlobal';
 }

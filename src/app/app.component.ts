@@ -1,28 +1,32 @@
 import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { GoglobalComponent } from './goglobal/goglobal.component';
+import { GoGlobalComponent } from './goglobal/goglobal.component';
 import { ItemService } from './item.service';
 import { HeaderComponent } from './header/header.component';
+import { IssonlineComponent } from './issonline/issonline.component';
+import { EgovComponent } from './egov/egov.component';
+import { EgovDevComponent } from './egov-dev/egov-dev.component';
+import { InterfacesComponent } from './interfaces/interfaces.component';
+import { LinksComponent } from './links/links.component';
+import { ConfigEgovComponent } from './config-egov/config-egov.component';
 
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, GoglobalComponent, HeaderComponent],
+  imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
+    EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
   providers: [ItemService]
 })
-export class AppComponent implements OnInit {
-title='Tributario'
+export class AppComponent {
+  title= 'trib'
 
-  selectedItem: any;
+currentComponent: string = '';
 
-  constructor(private itemService: ItemService) {}
-
-  ngOnInit() {
-    this.itemService.selectedItem$.subscribe(item => {
-      this.selectedItem = item;
-    });
+  setComponent(componentName: string) {
+    this.currentComponent = componentName;
   }
 }

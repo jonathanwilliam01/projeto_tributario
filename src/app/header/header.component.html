@@ -5,12 +5,12 @@
   </a>
   </div>
   <div class="menu">
-   <li class="bot" *ngFor="let item of items" (click)="onItemClick(item)"> {{ item.name1}} </li>
-   <li class="bot"> IssOnline </li>
-   <li class="bot"> E-gov </li>
-   <li class="bot"> E-gov DEV </li>
-   <li class="bot"> Config E-gov </li>
-   <li class="bot"> Interfaces </li>
-   <li class="bot"> Link Uteis </li>
+   <li class="bot" (click)="selectComponent('GoGlobal')"> GoGlobal </li>
+   <li class="bot" (click)="selectComponent('IssOnline')"> IssOnline </li>
+   <li class="bot" (click)="selectComponent('egov')"> E-Gov </li>
+   <li class="bot" (click)="selectComponent('egov_dev')"> E-Gov Homolog. </li>
+   <li class="bot" (click)="selectComponent('config')"> Config E-Gov </li>
+   <li class="bot" (click)="selectComponent('interfaces')"> Interfaces </li>
+   <li class="bot" (click)="selectComponent('links')"> Link Uteis </li>
   </div>
 </div>

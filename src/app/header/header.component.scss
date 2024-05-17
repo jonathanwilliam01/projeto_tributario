@@ -3,10 +3,11 @@
   justify-content: center;
   align-items: center;
   display: flex;
-  height: 98vh;
+  height: 97vh;
   width: 13%;
   border-radius: 5px;
   box-shadow: 4px 3px 10px 0px black;
+  border: 1px solid rgb(80, 80, 80);
 }
 
 a{
@@ -47,7 +48,7 @@ a{
 .bot{
   font-size: 20px;
   padding-left: 15px;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   border-radius: 10px;
   justify-content: left;
   align-items: center;
