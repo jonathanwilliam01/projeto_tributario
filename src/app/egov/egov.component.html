@@ -5,9 +5,10 @@
   </div>
 
   <div class="blocos">
+
     <div class="bloco-1">
       <div class="overlay">
-        <div class="content">
+        <div class="content" *ngIf="currentPage === 1">
           <div class="est"> São Paulo </div>
           <div class="li"> <a href="https://pmarapei.geosiap.net.br/pmarapei/websis/siapegov/portal/index.php" target="_blank"> Arapei </a> </div>
           <div class="li"> <a href="https://pmbananal.geosiap.net.br/pmbananal/websis/siapegov/portal/index.php" target="_blank"> Bananal </a> </div>
@@ -20,6 +21,13 @@
           <div class="li"> <a href="https://pmguaratingueta.geosiap.net.br/pmguaratingueta/websis/siapegov/portal/" target="_blank"> Guaratinguetá </a> </div>
           <div class="li"> <a href="https://siap.jacarei.sp.gov.br/pmjacarei/websis/siapegov/portal/index.php" target="_blank"> Jacarei </a> </div>
           <div class="li"> <a href="https://pmlavrinhas.geosiap.net.br/pmlavrinhas/websis/siapegov/portal/index.php" target="_blank"> Lavrinhas </a> </div>
+          <div class="paginas">
+            <button (click)="pag(1)" class="pag"> 1 </button>
+            <button (click)="pag(2)" class="pag"> 2 </button>
+          </div>
+        </div>
+        <div class="content" *ngIf="currentPage === 2">
+          <div class="est"> São Paulo </div>
           <div class="li"> <a href="https://siap.lorena.sp.gov.br/pmlorena/websis/siapegov/portal/index.php" target="_blank"> Lorena </a> </div>
           <div class="li"> <a href="http://pmpedrotoledo.geosiap.net.br/pmpedrotoledo/websis/siapegov/portal/index.php" target="_blank"> Pedro de Toledo </a> </div>
           <div class="li"> <a href="https://siapegov.pindamonhangaba.sp.gov.br/pmpinda/websis/siapegov/portal/index.php" target="_blank"> Pindamonhangaba </a> </div>
@@ -31,6 +39,10 @@
           <div class="li"> <a href="https://pmsantabranca.geosiap.net.br/pmsantabranca/websis/siapegov/portal/index.php" target="_blank"> Santa Branca </a> </div>
           <div class="li"> <a href="https://online.saovicente.sp.gov.br/pmsaovicente/websis/siapegov/portal/index.php" target="_blank"> São Vicente </a> </div>
           <div class="li"> <a href="" target="_blank"> Silveiras </a> </div>
+          <div class="paginas">
+            <button (click)="pag(1)" class="pag" [class.active]> 1 </button>
+            <button (click)="pag(2)" class="pag" [class.active]> 2 </button>
+          </div>
         </div>
       </div>
     </div>

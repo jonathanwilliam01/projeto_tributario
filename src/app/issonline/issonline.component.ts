@@ -10,4 +10,10 @@ import { Component, Input } from '@angular/core';
 })
 export class IssonlineComponent {
   currentComponent = 'IssOnline';
+
+  currentPage: number = 1;
+
+  pag(page: number): void {
+    this.currentPage = page;
+}
 }
