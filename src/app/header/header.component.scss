@@ -1,7 +1,7 @@
 .lateral_menu {
   background-color: rgb(41, 49, 53);
   justify-content: center;
-  align-items: center;
+  //align-items: center;
   display: flex;
   height: 97vh;
   width: 14%;
@@ -17,9 +17,9 @@ a{
 
 
 .logo{
-  width: 90%;
-  height: 90%;
-  margin-top: 1%;
+  width: 80%;
+  height: 10%;
+  margin-top: 8%;
   position: flex;
   display: block;
   cursor: pointer;
@@ -46,7 +46,7 @@ a{
 }
 
 .bot{
-  font-size: 3.5vh;
+  font-size: 23px;
   padding-left: 5%;
   margin-bottom: 7%;
   border-radius: 10px;
