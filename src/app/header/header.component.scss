@@ -4,7 +4,7 @@
   align-items: center;
   display: flex;
   height: 97vh;
-  width: 13%;
+  width: 14%;
   border-radius: 5px;
   box-shadow: 4px 3px 10px 0px black;
   border: 1px solid rgb(80, 80, 80);
@@ -17,10 +17,10 @@ a{
 
 
 .logo{
-  width: auto;
-  height: 100%;
-  top: 25px;
-  position: absolute;
+  width: 90%;
+  height: 90%;
+  margin-top: 1%;
+  position: flex;
   display: block;
   cursor: pointer;
 }
@@ -46,9 +46,9 @@ a{
 }
 
 .bot{
-  font-size: 20px;
-  padding-left: 15px;
-  margin-bottom: 5%;
+  font-size: 3.5vh;
+  padding-left: 5%;
+  margin-bottom: 7%;
   border-radius: 10px;
   justify-content: left;
   align-items: center;
