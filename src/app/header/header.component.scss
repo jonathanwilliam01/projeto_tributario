@@ -4,7 +4,7 @@
   //align-items: center;
   display: flex;
   height: 97vh;
-  width: 14%;
+  width: 13.5vw;
   border-radius: 5px;
   box-shadow: 4px 3px 10px 0px black;
   border: 1px solid rgb(80, 80, 80);
@@ -46,7 +46,8 @@ a{
 }
 
 .bot{
-  font-size: 23px;
+  font-size: 2.5vh;
+  font-size: 1.3vw;
   padding-left: 5%;
   margin-bottom: 7%;
   border-radius: 10px;
@@ -65,4 +66,13 @@ a{
 .bot:hover{
   background-color: rgb(74, 89, 97);
   color: rgb(74, 194, 194);
+}
+
+.versao{
+  bottom:2%;
+  position: fixed;
+  display: flex;
+  color: rgb(130, 142, 150);
+  font-size: 1vh;
+  font-size: 0.8vw;
 }
