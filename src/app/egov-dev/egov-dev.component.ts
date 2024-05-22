@@ -10,4 +10,10 @@ import { Component } from '@angular/core';
 })
 export class EgovDevComponent {
   currentComponent = 'egov_dev';
+
+  currentPage: number = 1;
+
+  pag(page: number): void {
+    this.currentPage = page;
+}
 }
