@@ -49,7 +49,7 @@
 .bloco-1{
   flex: 1;
   margin-right: 30px;
-  background-image: url('https://images.pexels.com/photos/45917/pexels-photo-45917.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://images.pexels.com/photos/15384280/pexels-photo-15384280/free-photo-of-cidade-meio-urbano-arranha-ceus-arranha-ceu.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80%;
@@ -59,7 +59,7 @@
 .bloco-2{
   flex: 1;
   margin-right: 30px;
-  background-image: url('https://images.pexels.com/photos/3648269/pexels-photo-3648269.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
+  background-image: url('https://dellago.rio.br/wp-content/uploads/2024/02/Zonas-Ponto-Turistico-2.webp');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 90%;
@@ -99,24 +99,25 @@ a{
 }
 
 .est{
-  margin-left: 7px;
+  margin-left: 3%;
+  margin-top: 2%;
   font-size: 110%;
   width: 200px;
 }
 
 .content {
   position: absolute;
-  width: 30%;
-  top: 15px;
+  width: 100%;
+  height: 100%;
   color: #fff; /* Cor do texto */
   text-align: left;
 }
 
 .li{
-  margin-left: 20%;
-  margin-top: 3%;
-  width: 290%;
-  height: 6vh;
+  margin-left: 8%;
+  margin-top: 3.8%;
+  width: 85%;
+  height: 4.3vh;
   justify-content: center;
   display: flex;
   position: relative;

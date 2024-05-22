@@ -49,7 +49,7 @@
 .bloco-1{
   flex: 1;
   margin-right: 30px;
-  background-image: url('https://i.pinimg.com/564x/4e/ea/ef/4eeaef9977d18d9d7ec3ab9cd0384559.jpg');
+  background-image: url('https://images.pexels.com/photos/15384280/pexels-photo-15384280/free-photo-of-cidade-meio-urbano-arranha-ceus-arranha-ceu.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 80%;
@@ -68,10 +68,10 @@
 .bloco-3{
   flex:1;
   margin-right: 0px;
-  background-image: url('https://visitbrasil.com/wp-content/uploads/2021/06/Belo-Horizonte.jpg');
+  background-image: url('https://images.pexels.com/photos/12795930/pexels-photo-12795930.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1');
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: 40%;
+  background-position: 100%;
 }
 
 a{
@@ -99,24 +99,25 @@ a{
 }
 
 .est{
-  margin-left: 7px;
+  margin-left: 3%;
+  margin-top: 2%;
   font-size: 110%;
   width: 200px;
 }
 
 .content {
   position: absolute;
-  width: 30%;
-  top: 15px;
+  width: 100%;
+  height: 100%;
   color: #fff; /* Cor do texto */
   text-align: left;
 }
 
 .li{
-  margin-left: 20%;
-  margin-top: 3%;
-  width: 290%;
-  height: 6vh;
+  margin-left: 8%;
+  margin-top: 3.8%;
+  width: 85%;
+  height: 4.3vh;
   justify-content: center;
   display: flex;
   position: relative;
