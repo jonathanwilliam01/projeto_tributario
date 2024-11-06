@@ -10,7 +10,7 @@
     box-shadow: 4px 3px 15px 0px black;
     border: 1px solid rgb(80, 80, 80);
   }
-  
+
   .titulo{
     position: absolute;
     top: 3%;
@@ -19,7 +19,7 @@
     color: aliceblue;
     font-weight: bold;
   }
-  
+
   .blocos{
     position: absolute;
     display: flex;
@@ -30,7 +30,7 @@
     float: left;
     justify-content: center;
   }
-  
+
   .bloco-1,.bloco-2,.bloco-3{
     font-size: 165%;
     color: aliceblue;
@@ -44,46 +44,46 @@
     list-style: none;
     box-shadow: 4px 3px 10px 0px black;
   }
-  
-  
+
+
   .bloco-1{
     flex: 1;
     margin-right: 30px;
-    background-image: url('https://i.pinimg.com/564x/4e/ea/ef/4eeaef9977d18d9d7ec3ab9cd0384559.jpg');
+    background-image: url('https://images.unsplash.com/photo-1531097842074-4a80589a7d07?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
   }
-  
-  
+
+
   .bloco-2{
     flex: 1;
     margin-right: 30px;
-    background-image: url('https://i.pinimg.com/736x/c5/d9/50/c5d950bbb0a9410e5bfcb7e97ffeee2e.jpg');
+    background-image: url('https://images.unsplash.com/photo-1544989164-31dc3c645987?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 90%;
   }
-  
+
   .bloco-3{
     flex:1;
     margin-right: 0px;
-    background-image: url('https://wallpapercave.com/wp/wp4201740.jpg');
+    background-image: url('https://media.istockphoto.com/id/1351677112/pt/foto/a-quiet-historic-street-in-the-city-of-tiradentes-in-minas-gerais.jpg?s=2048x2048&w=is&k=20&c=DQHOK2ffHyNAwdhHEfOOYXeBw4l_svDMTD8AfSM3Iao=');
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 100%;
+    background-position: 35%;
   }
-  
+
   a{
     text-decoration-line: none;
     color:inherit;
     margin-left: 3%;
   }
-  
+
   .li:hover{
     background-color: rgba(150, 148, 148, 0.753);
     color: rgb(0, 0, 0);
   }
-  
+
   .overlay {
     position: absolute;
     width: 32%;
@@ -93,18 +93,18 @@
     opacity: 0;
     transition: opacity 0.5s ease;
   }
-  
+
   .overlay:hover {
     opacity: 5;
   }
-  
+
   .est{
     margin-left: 3%;
     margin-top: 2%;
     font-size: 110%;
     width: 200px;
   }
-  
+
   .content {
     position: absolute;
     width: 100%;
@@ -112,7 +112,7 @@
     color: #fff; /* Cor do texto */
     text-align: left;
   }
-  
+
   .li{
     margin-left: 8%;
     margin-top: 3.8%;
@@ -125,4 +125,3 @@
     box-sizing: border-box;
     border-radius: 3px;
   }
-  
