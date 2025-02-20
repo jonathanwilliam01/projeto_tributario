@@ -10,4 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class GoGlobalComponent {
   currentComponent = 'GoGlobal';
+  
+  currentPage: number = 1;
+
+  pag(page: number): void {
+    this.currentPage = page;
+}
 }
