@@ -31,4 +31,11 @@
   <app-login-novo></app-login-novo>
 </ng-container>
 
+<ng-container *ngIf="currentComponent === 'setup'">
+  <app-setup></app-setup>
+</ng-container>
+
+<ng-container *ngIf="currentComponent === 'IssOnline-dev'">
+  <app-issonline-dev></app-issonline-dev>
+</ng-container>
 
