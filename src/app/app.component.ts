@@ -12,13 +12,13 @@ import { ConfigEgovComponent } from './config-egov/config-egov.component';
 import { LoginNovoComponent } from './login-novo/login-novo.component';
 import { SetupComponent } from './setup/setup.component';
 import { IssonlineDevComponent } from './issonline-dev/issonline-dev.component';
-
+import { PessoasComponent } from './pessoas/pessoas.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
-    EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent
+    EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
