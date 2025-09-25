@@ -54,7 +54,7 @@ a{
   justify-content: left;
   align-items: center;
   display: flex;
-  width: 100%;
+  width: 10.5vw;
   height: 5%;
   color: rgb(233, 233, 233);
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -82,6 +82,10 @@ a{
   background-color: rgb(74, 89, 97);
   color: rgb(74, 194, 194);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.active{
+  transition: all 0.3s ease;
 }
 
 .versao{
