@@ -83,6 +83,7 @@ a{
 .li:hover{
   background-color: rgba(150, 148, 148, 0.753);
   color: rgb(0, 0, 0);
+  transform: translateX(5px);
 }
 
 .overlay {
@@ -125,6 +126,7 @@ a{
   flex-direction: column;
   box-sizing: border-box;
   border-radius: 3px;
+  transition: all 0.3s ease;
 }
 
 .paginas{
@@ -148,4 +150,5 @@ a{
 .pag:hover{
   background-color: rgba(255, 255, 255, 0.89);
   cursor: pointer;
+  transition: all 0.3s ease;
 }
