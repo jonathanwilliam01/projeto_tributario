@@ -116,6 +116,32 @@ a{
   font-size: 0.8vw;
 }
 
+@media (max-width: 1366px) {
+  .sobre {
+    bottom:33px 
+  }
+}
+
+@media (max-width: 1366px) {
+  .versao {
+    bottom:53px 
+  }
+}
+
+@media (max-width: 1366px) {
+  .creditos {
+    bottom:13px 
+  }
+}
+
+@media (max-width: 1366px) {
+  .creditos,
+  .versao,
+  .sobre {
+    font-size: 0.7vw; 
+  }
+}
+
 .sobre:hover{
   color: rgb(74, 194, 194);
   cursor: pointer;
