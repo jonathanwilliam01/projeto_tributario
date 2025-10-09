@@ -20,6 +20,12 @@
   font-weight: bold;
 }
 
+@media (max-width: 1366px) {
+  .titulo {
+    font-size: 26px;
+  }
+}
+
 .blocos{
   position: absolute;
   display: flex;
@@ -43,14 +49,6 @@
   align-items: flex-start;
   list-style: none;
   box-shadow: 4px 3px 10px 0px black;
-}
-
-@media (max-width: 1366px) {
-  .bloco-1,
-  .bloco-2,
-  .bloco-3 {
-    font-size: 22px; 
-  }
 }
 
 .bloco-1{
@@ -172,6 +170,14 @@ a{
   .pag {
     width: 6%;
     height: 70%;
+  }
+}
+
+@media (max-width: 1366px) {
+  .bloco-1,
+  .bloco-2,
+  .bloco-3 {
+    font-size: 22px; 
   }
 }
 

@@ -173,3 +173,9 @@ a{
   cursor: pointer;
   transition: all 0.3s ease;
 }
+
+@media (max-width: 1366px) {
+  .titulo {
+    font-size: 26px;
+  }
+}

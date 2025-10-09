@@ -26,6 +26,12 @@ a{
   cursor: pointer;
 }
 
+@media (max-width: 1366px) {
+  .logo {
+    margin-top: 5%;
+  }
+}
+
 .logo img{
   width: 100%;
   height: auto;
@@ -70,6 +76,12 @@ a{
 .bot-tit{
   border-bottom: 1px solid white;
   margin-bottom: 13%;
+}
+
+@media (max-width: 1366px) {
+  .bot {
+    margin-bottom: 6%;
+  }
 }
 
 .bot:hover{
