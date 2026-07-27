@@ -14,13 +14,14 @@ import { SetupComponent } from './setup/setup.component';
 import { IssonlineDevComponent } from './issonline-dev/issonline-dev.component';
 import { PessoasComponent } from './pessoas/pessoas.component';
 import { JucespComponent } from './jucesp/jucesp.component';
+import { SegundaViaComponent } from './segunda-via/segunda-via.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
     EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
-    JucespComponent
+    JucespComponent, SegundaViaComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
