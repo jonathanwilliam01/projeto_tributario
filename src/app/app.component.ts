@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { GoGlobalComponent } from './goglobal/goglobal.component';
 import { ItemService } from './item.service';
@@ -15,13 +15,15 @@ import { IssonlineDevComponent } from './issonline-dev/issonline-dev.component';
 import { PessoasComponent } from './pessoas/pessoas.component';
 import { JucespComponent } from './jucesp/jucesp.component';
 import { SegundaViaComponent } from './segunda-via/segunda-via.component';
+import { AtendeMaisComponent } from './atende-mais/atende-mais.component';
+import { PrpWebComponent } from './prp-web/prp-web.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
     EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
-    JucespComponent, SegundaViaComponent
+    JucespComponent, SegundaViaComponent, AtendeMaisComponent, PrpWebComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -30,9 +32,17 @@ import { SegundaViaComponent } from './segunda-via/segunda-via.component';
 export class AppComponent {
   title= 'trib'
 
-currentComponent: string = '';
+  currentComponent: string = '';
+  copied = false;
 
   setComponent(componentName: string) {
     this.currentComponent = componentName;
+  }
+
+  copyEmail() {
+    navigator.clipboard.writeText('Jonathan.willian@embras.net').then(() => {
+      this.copied = true;
+      setTimeout(() => this.copied = false, 2000);
+    });
   }
 }
