@@ -17,13 +17,14 @@ import { JucespComponent } from './jucesp/jucesp.component';
 import { SegundaViaComponent } from './segunda-via/segunda-via.component';
 import { AtendeMaisComponent } from './atende-mais/atende-mais.component';
 import { PrpWebComponent } from './prp-web/prp-web.component';
+import { TransparenciaComponent } from './transparencia/transparencia.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
     EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
-    JucespComponent, SegundaViaComponent, AtendeMaisComponent, PrpWebComponent
+    JucespComponent, SegundaViaComponent, AtendeMaisComponent, PrpWebComponent, TransparenciaComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
