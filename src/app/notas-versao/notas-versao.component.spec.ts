@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { InterfacesComponent } from './interfaces.component';
+import { NotasVersaoComponent } from './notas-versao.component';
 
-describe('InterfacesComponent', () => {
-  let component: InterfacesComponent;
-  let fixture: ComponentFixture<InterfacesComponent>;
+describe('NotasVersaoComponent', () => {
+  let component: NotasVersaoComponent;
+  let fixture: ComponentFixture<NotasVersaoComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [InterfacesComponent]
+      imports: [NotasVersaoComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(InterfacesComponent);
+    fixture = TestBed.createComponent(NotasVersaoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

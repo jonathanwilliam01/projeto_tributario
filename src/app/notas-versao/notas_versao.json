@@ -1,0 +1,25 @@
+{
+  "versoes": [
+    {
+      "versao": "V2.26.07.01",
+      "data": "28/07/2026",
+      "descricao": [
+        "Ajustado as abas de ISSOnline e E-Gov para agrupar em submenu as opções relacionadas",
+        "Criado a aba de nova segunda via dentro do menu do E-gov, trazendo os links das prefeituras que estão usando a nova tela de segunda via",
+        "Adicionado o link de São Gonçalo na aba de Setup",
+        "Criado a aba do Facilita-SP com os links das prefeituras que usam a nova interface",
+        "Ajustado a responsividade do sistema possibilitando a visualização em celulares e tablets"
+      ]
+    },
+    {
+      "versao": "V2.26.08.01",
+      "data": "04/08/2026",
+      "descricao": [
+        "Adicionado link para São Gonçalo no ISS Online.",
+        "Adicionado link para São Gonçalo no ISS Online Dev.",
+        "Adicionado link para Bananal na Jucesp.",
+        "Criado a tela de notas de versão."
+      ]
+    }
+  ]
+}

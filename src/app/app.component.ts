@@ -6,7 +6,6 @@ import { HeaderComponent } from './header/header.component';
 import { IssonlineComponent } from './issonline/issonline.component';
 import { EgovComponent } from './egov/egov.component';
 import { EgovDevComponent } from './egov-dev/egov-dev.component';
-import { InterfacesComponent } from './interfaces/interfaces.component';
 import { LinksComponent } from './links/links.component';
 import { ConfigEgovComponent } from './config-egov/config-egov.component';
 import { LoginNovoComponent } from './login-novo/login-novo.component';
@@ -18,13 +17,15 @@ import { SegundaViaComponent } from './segunda-via/segunda-via.component';
 import { AtendeMaisComponent } from './atende-mais/atende-mais.component';
 import { PrpWebComponent } from './prp-web/prp-web.component';
 import { TransparenciaComponent } from './transparencia/transparencia.component';
+import { NotasVersaoComponent } from './notas-versao/notas-versao.component';
+import notasVersaoData from './notas-versao/notas_versao.json';
 
 @Component({
   selector: 'app-root',
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
-    EgovDevComponent, InterfacesComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
-    JucespComponent, SegundaViaComponent, AtendeMaisComponent, PrpWebComponent, TransparenciaComponent
+    EgovDevComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
+    JucespComponent, SegundaViaComponent, AtendeMaisComponent, PrpWebComponent, TransparenciaComponent, NotasVersaoComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],
@@ -35,9 +36,19 @@ export class AppComponent {
 
   currentComponent: string = '';
   copied = false;
+  notasVersaoVisivel = false;
+  versaoAtual = [...notasVersaoData.versoes].sort((a, b) => b.versao.localeCompare(a.versao))[0]?.versao ?? '';
 
   setComponent(componentName: string) {
     this.currentComponent = componentName;
+  }
+
+  abrirNotasVersao() {
+    this.notasVersaoVisivel = true;
+  }
+
+  fecharNotasVersao() {
+    this.notasVersaoVisivel = false;
   }
 
   copyEmail() {
