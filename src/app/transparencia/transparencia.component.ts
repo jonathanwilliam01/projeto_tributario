@@ -1,13 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SistemaLinksComponent } from '../shared/sistema-links/sistema-links.component';
+import dados from './transparencia.links.json';
 
 @Component({
   selector: 'app-transparencia',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './transparencia.component.html',
-  styleUrl: './transparencia.component.scss'
+  imports: [SistemaLinksComponent],
+  templateUrl: './transparencia.component.html'
 })
 export class TransparenciaComponent {
-  currentComponent = 'transparencia';
+  dados = dados;
 }

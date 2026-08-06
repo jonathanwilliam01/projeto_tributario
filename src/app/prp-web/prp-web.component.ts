@@ -1,19 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SistemaLinksComponent } from '../shared/sistema-links/sistema-links.component';
+import dados from './prp-web.links.json';
 
 @Component({
   selector: 'app-prp-web',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './prp-web.component.html',
-  styleUrl: './prp-web.component.scss'
+  imports: [SistemaLinksComponent],
+  templateUrl: './prp-web.component.html'
 })
 export class PrpWebComponent {
-  currentComponent = 'prp_web';
-
-  currentPage: number = 1;
-
-  pag(page: number): void {
-    this.currentPage = page;
-  }
+  dados = dados;
 }

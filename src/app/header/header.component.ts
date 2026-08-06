@@ -13,6 +13,7 @@ import notasVersaoData from '../notas-versao/notas_versao.json';
 export class HeaderComponent {
   @Output() componentSelected = new EventEmitter<string>();
   @Output() verNotasVersao = new EventEmitter<void>();
+  @Output() pesquisar = new EventEmitter<string>();
   selectedComponent: string = ''; // Adicione esta propriedade
   openSubmenu: string | null = null;
   menuOpen = false; // controla o drawer no mobile
@@ -24,6 +25,14 @@ export class HeaderComponent {
   abrirNotasVersao(event: Event) {
     event.stopPropagation();
     this.verNotasVersao.emit();
+  }
+
+  buscar(termo: string) {
+    if (termo.trim()) {
+      this.selectedComponent = '';
+      this.openSubmenu = null;
+    }
+    this.pesquisar.emit(termo);
   }
 
   selectComponent(componentName: string, group: string | null = null) {

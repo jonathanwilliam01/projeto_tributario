@@ -1,19 +1,13 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { SistemaLinksComponent } from '../shared/sistema-links/sistema-links.component';
+import dados from './issonline.links.json';
 
 @Component({
   selector: 'app-issonline',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './issonline.component.html',
-  styleUrl: './issonline.component.scss'
+  imports: [SistemaLinksComponent],
+  templateUrl: './issonline.component.html'
 })
 export class IssonlineComponent {
-  currentComponent = 'IssOnline';
-
-  currentPage: number = 1;
-
-  pag(page: number): void {
-    this.currentPage = page;
-}
+  dados = dados;
 }

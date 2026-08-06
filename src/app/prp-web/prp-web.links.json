@@ -1,0 +1,29 @@
+{
+  "sistema": "PRP Web",
+  "titulo": "PRP Web",
+  "imagens": [
+    "/assets/desenho-de-fundo-minimalista-de-linhas-brilhantes-abstratas-brancas-e-cinzentas_84443-2795.avif",
+    "/assets/fpcamp-IBTCrlvKc2g-unsplash.jpg",
+    "/assets/photo-1626568941852-70bc179e493e.avif"
+  ],
+  "grupos": [
+    {
+      "nome": "São Paulo",
+      "itens": [
+
+      ]
+    },
+    {
+      "nome": "Rio de Janeiro",
+      "itens": [
+
+      ]
+    },
+    {
+      "nome": "Minas Gerais",
+      "itens": [
+
+      ]
+    }
+  ]
+}

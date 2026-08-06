@@ -1,13 +1,13 @@
-import { CommonModule } from '@angular/common';
-import { Component, Input } from '@angular/core';
+import { Component } from '@angular/core';
+import { SistemaLinksComponent } from '../shared/sistema-links/sistema-links.component';
+import dados from './jucesp.links.json';
 
 @Component({
   selector: 'app-jucesp',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './jucesp.component.html',
-  styleUrl: './jucesp.component.scss'
+  imports: [SistemaLinksComponent],
+  templateUrl: './jucesp.component.html'
 })
 export class JucespComponent {
-  currentComponent = 'jucesp';
+  dados = dados;
 }

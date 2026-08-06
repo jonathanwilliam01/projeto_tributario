@@ -1,19 +1,13 @@
-import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { SistemaLinksComponent } from '../shared/sistema-links/sistema-links.component';
+import dados from './atende-mais.links.json';
 
 @Component({
   selector: 'app-atende-mais',
   standalone: true,
-  imports: [CommonModule],
-  templateUrl: './atende-mais.component.html',
-  styleUrl: './atende-mais.component.scss'
+  imports: [SistemaLinksComponent],
+  templateUrl: './atende-mais.component.html'
 })
 export class AtendeMaisComponent {
-  currentComponent = 'atende_mais';
-
-  currentPage: number = 1;
-
-  pag(page: number): void {
-    this.currentPage = page;
-  }
+  dados = dados;
 }
