@@ -28,7 +28,8 @@
         { "cliente": "Queluz", "url": "https://dev.geosiap.net/pmqueluz/issonline/iss.login.php" },
         { "cliente": "Bananal", "url": "https://dev.geosiap.net/pmbananal/issonline/iss.login.php" },
         { "cliente": "Roseira", "url": "https://dev.geosiap.net/pmroseira/issonline/iss.login.php" },
-        { "cliente": "Pedro de Toledo", "url": "https://dev.geosiap.net/pmpedrotoledo/issonline/iss.login.php" }
+        { "cliente": "Pedro de Toledo", "url": "https://dev.geosiap.net/pmpedrotoledo/issonline/iss.login.php" },
+        { "cliente": "Lagoinha", "url": "https://dev.geosiap.net/pmlagoinha/issonline/iss.login.php" }
       ]
     },
     {

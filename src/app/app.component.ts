@@ -15,7 +15,6 @@ import { PessoasComponent } from './pessoas/pessoas.component';
 import { JucespComponent } from './jucesp/jucesp.component';
 import { SegundaViaComponent } from './segunda-via/segunda-via.component';
 import { AtendeMaisComponent } from './atende-mais/atende-mais.component';
-import { PrpWebComponent } from './prp-web/prp-web.component';
 import { TransparenciaComponent } from './transparencia/transparencia.component';
 import { NotasVersaoComponent } from './notas-versao/notas-versao.component';
 import notasVersaoData from './notas-versao/notas_versao.json';
@@ -26,7 +25,7 @@ import { SearchService, ResultadoBusca } from './search/search.service';
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
     EgovDevComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
-    JucespComponent, SegundaViaComponent, AtendeMaisComponent, PrpWebComponent, TransparenciaComponent, NotasVersaoComponent
+    JucespComponent, SegundaViaComponent, AtendeMaisComponent, TransparenciaComponent, NotasVersaoComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss'],

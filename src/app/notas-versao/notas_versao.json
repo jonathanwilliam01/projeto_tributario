@@ -36,6 +36,17 @@
       "descricao": [
         "Adicionado link do setup de Guararema"
       ]
+    },
+    {
+      "versao": "V3.26.10.02",
+      "data": "06/10/2026",
+      "descricao": [
+        "Adicionado link para Lagoinha no Config E-Gov.",
+        "Adicionado link para Lagoinha no ISS Online Dev.",
+        "Adicionado links para Pindamonhangaba e Lagoinha no Setup.",
+        "Adicionado links para Guararema e Nova Iguaçu no Config Login Novo.",
+        "Adicionado links para Pindamonhangaba e Guararema na Transparência."
+      ]
     }
   ]
 }
