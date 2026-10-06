@@ -2,9 +2,9 @@
   "sistema": "Facilita-SP / Jucesp",
   "titulo": "Facilita-SP / Jucesp",
   "imagens": [
-    "/assets/vitor-mendes-stafusa-o3jiiES00cI-unsplash.jpg",
-    "/assets/raphael-nogueira-CErddu-JwKw-unsplash.jpg",
-    "/assets/andre-antonelli-R2xICK7sS2U-unsplash.jpg"
+    "/assets/vitor-mendes-stafusa-o3jiiES00cI-unsplash.webp",
+    "/assets/raphael-nogueira-CErddu-JwKw-unsplash.webp",
+    "/assets/andre-antonelli-R2xICK7sS2U-unsplash.webp"
   ],
   "grupos": [
     {
@@ -17,7 +17,7 @@
         { "cliente": "Cruzeiro", "url": "https://pmcruzeiro.geosiap.net.br/jucesp/dashboard" },
         { "cliente": "Queluz", "url": "https://pmqueluz.geosiap.net.br/jucesp/dashboard" },
         { "cliente": "Lagoinha", "url": "https://lagoinha.geosiap.net.br/jucesp/dashboard" },
-        { "cliente": "Redenção", "url": "https://redencaodaserra.geosiap.net.br/jucesp/dashboard" },
+        { "cliente": "Redenção da Serra", "url": "https://redencaodaserra.geosiap.net.br/jucesp/dashboard" },
         { "cliente": "Bananal", "url": "https://pmbananal.geosiap.net.br/jucesp/dashboard" }
       ]
     },

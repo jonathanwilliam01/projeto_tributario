@@ -24,24 +24,9 @@ body {
   min-height: 100vh;
 }
 
-/* Component hosts must behave as blocks so the mobile flow layout
-   can give their content full width. Harmless on desktop (content
-   there is absolutely positioned). */
+/* Hosts dos componentes como bloco, para o layout mobile ocupar a largura toda. */
 app-root,
-app-header,
-app-goglobal,
-app-egov,
-app-egov-dev,
-app-config-egov,
-app-issonline,
-app-issonline-dev,
-app-links,
-app-login-novo,
-app-setup,
-app-pessoas,
-app-jucesp,
-app-segunda-via,
-app-interfaces {
+app-root > * {
   display: block;
 }
 
@@ -85,17 +70,6 @@ app-interfaces {
     gap: 16px !important;
   }
 
-  .bloco-1,
-  .bloco-2,
-  .bloco-3 {
-    width: 100% !important;
-    margin: 0 !important;
-    min-height: 120px !important;
-    font-size: 18px !important;
-    background-position: center !important;
-    overflow: hidden !important;
-  }
-
   /* Overlay reveals content on hover on desktop — on touch there is no
      hover, so make it permanently visible and part of the flow. */
   .overlay {
@@ -120,8 +94,7 @@ app-interfaces {
   }
 
   /* Links: full-width rows with proper touch targets. */
-  .li,
-  .li2 {
+  .li {
     width: auto !important;
     height: auto !important;
     min-height: 44px !important;
@@ -132,25 +105,9 @@ app-interfaces {
     transform: none !important;
   }
 
-  .li a,
-  .li2 a {
+  .li a {
     margin-left: 0 !important;
     display: block;
-  }
-
-  /* Pagination: bigger, tappable circles. */
-  .paginas,
-  .paginas2 {
-    height: auto !important;
-    margin: 16px 0 4px 0 !important;
-    gap: 14px;
-  }
-
-  .pag {
-    width: 42px !important;
-    height: 42px !important;
-    margin-right: 0 !important;
-    font-size: 16px !important;
   }
 }
 

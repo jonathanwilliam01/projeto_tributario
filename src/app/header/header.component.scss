@@ -78,6 +78,21 @@ a{
   color: rgb(130, 142, 150);
 }
 
+.busca-atalho{
+  flex-shrink: 0;
+  padding: 1px 5px;
+  border: 1px solid rgb(70, 78, 83);
+  border-radius: 4px;
+  color: rgb(110, 122, 130);
+  font-family: inherit;
+  font-size: 10px;
+  white-space: nowrap;
+}
+
+.busca:focus-within .busca-atalho{
+  display: none;
+}
+
 @media (max-width: 1366px) {
   .busca-icon, .busca-input {
     font-size: 12px;
@@ -260,20 +275,27 @@ a{
   transition: color 0.3s ease;
 }
 
-.versao:hover{
+.instalar{
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  flex-shrink: 0;
+  margin: 6px 0 2px;
+  padding: 4px 12px;
+  border-radius: 14px;
+  border: 1px solid rgba(74, 194, 194, 0.4);
   color: rgb(74, 194, 194);
+  font-size: 12px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
 }
 
-.sobre{
-  width: 100%;
-  flex-shrink: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  color: rgb(130, 142, 150);
-  font-size: 0.8vw;
-  margin-top: 1px;
-  transition: all 0.3s ease;
+.instalar:hover{
+  background-color: rgba(74, 194, 194, 0.12);
+}
+
+.versao:hover{
+  color: rgb(74, 194, 194);
 }
 
 .creditos{
@@ -290,15 +312,9 @@ a{
 
 @media (max-width: 1366px) {
   .creditos,
-  .versao,
-  .sobre {
+  .versao {
     font-size: 0.7vw;
   }
-}
-
-.sobre:hover{
-  color: rgb(74, 194, 194);
-  cursor: pointer;
 }
 
 /* ===================== Mobile top bar + drawer =====================
@@ -424,6 +440,8 @@ a{
     margin: 0 0 10px;
   }
 
+  .busca-atalho { display: none; }
+
   .bot:hover { transform: none; }
 
   .submenu {
@@ -449,7 +467,6 @@ a{
 
   /* Footer info flows at the bottom of the drawer instead of fixed. */
   .versao,
-  .sobre,
   .creditos {
     position: static;
     flex-shrink: 0;
