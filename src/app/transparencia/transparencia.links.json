@@ -14,7 +14,9 @@
         { "cliente": "Pedro de Toledo", "url": "https://pedrotoledo.geosiap.net.br:8843/transparencia/inscritos-divida" },
         { "cliente": "Arapei", "url": "https://pmarapei.geosiap.net.br/transparencia/inscritos-divida" },
         { "cliente": "Bananal", "url": "https://pmbananal.geosiap.net.br/transparencia/inscritos-divida" },
-        { "cliente": "Lagoinha", "url": "https://lagoinha.geosiap.net.br/transparencia/inscritos-divida" }
+        { "cliente": "Lagoinha", "url": "https://lagoinha.geosiap.net.br/transparencia/inscritos-divida" },
+        { "cliente": "Pindamonhangaba", "url": "https://siapegov.pindamonhangaba.sp.gov.br/transparencia/inscritos-divida" },
+        { "cliente": "Guararema", "url": "https://guararema.geosiap.net.br/transparencia/inscritos-divida" }
       ]
     },
     {

@@ -9,7 +9,6 @@ import links from '../links/links.links.json';
 import loginNovo from '../login-novo/login-novo.links.json';
 import atendeMais from '../atende-mais/atende-mais.links.json';
 import transparencia from '../transparencia/transparencia.links.json';
-import prpWeb from '../prp-web/prp-web.links.json';
 import setup from '../setup/setup.links.json';
 import pessoas from '../pessoas/pessoas.links.json';
 import configEgov from '../config-egov/config-egov.links.json';
@@ -25,7 +24,7 @@ export interface ResultadoBusca {
 
 const SISTEMAS: DadosSistema[] = [
   goglobal, egov, egovDev, issonline, issonlineDev, jucesp, links, loginNovo,
-  atendeMais, transparencia, prpWeb, setup, pessoas, configEgov, segundaVia
+  atendeMais, transparencia, setup, pessoas, configEgov, segundaVia
 ];
 
 function normalizar(texto: string): string {
