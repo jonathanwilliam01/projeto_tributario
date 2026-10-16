@@ -23,8 +23,11 @@ import { pageview } from '@vercel/analytics';
 import { SwUpdate } from '@angular/service-worker';
 import { FavoritosService } from './favoritos/favoritos.service';
 import { ClientesComponent } from './clientes/clientes.component';
+import { SugestaoComponent } from './sugestao/sugestao.component';
 
 const CHAVE_NOTAS = 'notasVersaoVistas';
+const EMAIL_CONTATO = 'jonathan.willian@embras.net';
+const LINK_SUGESTAO = 'https://github.com/jonathanwilliam01/projeto_tributario/issues/new';
 const DIAS_EXIBINDO_NOTAS = 7;
 
 @Component({
@@ -32,7 +35,7 @@ const DIAS_EXIBINDO_NOTAS = 7;
   standalone: true,
   imports: [CommonModule, GoGlobalComponent, HeaderComponent, IssonlineComponent, EgovComponent,
     EgovDevComponent, LinksComponent, ConfigEgovComponent, LoginNovoComponent, SetupComponent, IssonlineDevComponent, PessoasComponent,
-    JucespComponent, SegundaViaComponent, AtendeMaisComponent, TransparenciaComponent, NotasVersaoComponent, ClientesComponent, ItbiComponent
+    JucespComponent, SegundaViaComponent, AtendeMaisComponent, TransparenciaComponent, NotasVersaoComponent, SugestaoComponent, ClientesComponent, ItbiComponent
   ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
@@ -40,6 +43,9 @@ const DIAS_EXIBINDO_NOTAS = 7;
 export class AppComponent implements OnInit {
   currentComponent: string = '';
   copied = false;
+  readonly email = EMAIL_CONTATO;
+  readonly linkSugestao = LINK_SUGESTAO;
+  sugestaoVisivel = false;
   notasVersaoVisivel = false;
   ultimaVersao = [...notasVersaoData.versoes].sort((a, b) => b.versao.localeCompare(a.versao, undefined, { numeric: true }))[0];
   versaoAtual = this.ultimaVersao?.versao ?? '';
@@ -59,7 +65,7 @@ export class AppComponent implements OnInit {
   setComponent(componentName: string) {
     this.resultadosBusca = null;
     this.currentComponent = componentName;
-    this.registrarVisita(`/tela/${componentName}`);
+    if (componentName) this.registrarVisita(`/tela/${componentName}`);
   }
 
   // Sem rotas, telas e links abertos viram páginas virtuais no Vercel Analytics.
@@ -135,7 +141,7 @@ export class AppComponent implements OnInit {
   }
 
   copyEmail() {
-    navigator.clipboard.writeText('jonathan.willian@embras.net').then(() => {
+    navigator.clipboard.writeText(this.email).then(() => {
       this.copied = true;
       setTimeout(() => this.copied = false, 2000);
     });
