@@ -43,7 +43,7 @@
       "nome": "Minas Gerais",
       "itens": [
         { "cliente": "Itamonte", "url": "https://pmitamonte.geosiap.net.br/pmitamonte/issonline/iss.login.php" },
-        { "cliente": "Pouso Alto", "url": "https://pmpousoalto.geosiap.net.br:8443/pmpousoalto/issonline/iss.login.php" }
+        { "cliente": "Pouso Alto", "url": "https://pousoalto.geosiap.net.br/pmpousoalto/issonline/iss.login.php" }
       ]
     }
   ]

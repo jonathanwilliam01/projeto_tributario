@@ -1,27 +1,21 @@
-# Atalhos Tributario
+# Atalhos Tributário
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.7.
+Portal de atalhos da equipe de suporte tributário da Embras. Reúne em um só lugar os links dos sistemas tributários dos municípios atendidos, organizados por estado (SP, RJ e MG).
 
-## Development server
+Acesse: https://projeto-tributario.vercel.app/
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## O que tem
 
-## Code scaffolding
+- **Favoritos e Recentes**: marque links com estrela e veja os últimos abertos na tela inicial.
+- **Busca rápida (Ctrl K)**: encontra qualquer link, com opção de copiar ou favoritar.
+- **Clientes**: todos os sistemas de cada município numa tela só.
+- **E-Gov**: produção, homologação, Nova Segunda Via, ITBI e configurações.
+- **IssOnline**: produção e homologação.
+- **Facilita-SP / Jucesp**, **Atende Mais** e **Transparência – Inscritos em Dívida**.
+- **GoGlobal**, **Setup**, **Pessoas**, **Config Contas** e **Links Úteis** (documentação, wiki, demandas e planilhas).
+- **Versão dos clientes**: E-Gov e IssOnline de produção mostram a versão atual de cada município ao lado do nome.
+- Pode ser instalado como aplicativo pelo botão **Instalar app**.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Projeto irmão
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Para os sistemas administrativos, financeiros e de infraestrutura, use o [Atalhos Embras](https://atalhos-embras.vercel.app/).
