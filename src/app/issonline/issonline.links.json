@@ -23,7 +23,7 @@
         { "cliente": "Redenção da Serra", "url": "https://pmredencao.geosiap.net.br/pmredencaodaserra/issonline/iss.login.php" },
         { "cliente": "Salesópolis", "url": "https://pmsalesopolis.geosiap.net.br/pmsalesopolis/issonline/iss.login.php" },
         { "cliente": "Santa Branca", "url": "https://pmsantabranca.geosiap.net.br/pmsantabranca/issonline/iss.login.php" },
-        { "cliente": "Silveiras", "url": "http://pmsilveiras.geosiap.net.br:8080/pmsilveiras/issonline/iss.login.php" },
+        { "cliente": "Silveiras", "url": "https://pmsilveiras.geosiap.net.br:8443/pmsilveiras/issonline/iss.login.php" },
         { "cliente": "Arapei", "url": "https://pmarapei.geosiap.net.br/pmarapei/issonline/iss.login.php" },
         { "cliente": "Queluz", "url": "https://pmqueluz.geosiap.net.br/pmqueluz/issonline/iss.login.php" },
         { "cliente": "Bananal", "url": "https://pmbananal.geosiap.net.br/pmbananal/issonline/iss.login.php" },

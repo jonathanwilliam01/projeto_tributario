@@ -1,6 +1,8 @@
 const sistemas = {
   egov: { dados: require('../src/app/egov/egov.links.json'), regex: /\(\(([\d.]+)\)/ },
-  issonline: { dados: require('../src/app/issonline/issonline.links.json'), regex: /ISS Online v\.\s*([\d.]+)/ }
+  issonline: { dados: require('../src/app/issonline/issonline.links.json'), regex: /ISS Online v\.\s*([\d.]+)/ },
+  // ITBI: "versão 2.2.240.7" no título.
+  itbi: { dados: require('../src/app/itbi/itbi.links.json'), regex: /<title>[^<]*?(\d+\.\d+\.\d+\.\d+)/ }
 };
 
 const TIMEOUT_MS = 12000;
@@ -26,8 +28,9 @@ module.exports = async (req, res) => {
   const urls = sistema.dados.grupos.flatMap(g => g.itens).filter(i => i.url && !i.inativo).map(i => i.url);
   const versoes = await Promise.all(urls.map(url => versaoDe(url, sistema.regex)));
 
+  // Versão muda pouco: o CDN responde na hora e atualiza em segundo plano.
   // Com cliente que não respondeu, cache curto para a falha não ficar presa.
-  const cache = versoes.includes(undefined) ? 's-maxage=60, stale-while-revalidate=600' : 's-maxage=600, stale-while-revalidate=3600';
+  const cache = versoes.includes(undefined) ? 's-maxage=60, stale-while-revalidate=600' : 's-maxage=1800, stale-while-revalidate=86400';
   res.setHeader('Cache-Control', cache);
   res.status(200).json(Object.fromEntries(urls.map((url, i) => [url, versoes[i] ?? null])));
 };

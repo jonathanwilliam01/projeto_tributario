@@ -13,7 +13,7 @@ Acesse: https://projeto-tributario.vercel.app/
 - **IssOnline**: produção e homologação.
 - **Facilita-SP / Jucesp**, **Atende Mais** e **Transparência – Inscritos em Dívida**.
 - **GoGlobal**, **Setup**, **Pessoas**, **Config Contas** e **Links Úteis** (documentação, wiki, demandas e planilhas).
-- **Versão dos clientes**: E-Gov e IssOnline de produção mostram a versão atual de cada município ao lado do nome.
+- **Versão dos clientes**: E-Gov, ITBI e IssOnline de produção mostram a versão atual de cada município ao lado do nome.
 - Pode ser instalado como aplicativo pelo botão **Instalar app**.
 
 ## Projeto irmão

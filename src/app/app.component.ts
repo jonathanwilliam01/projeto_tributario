@@ -41,7 +41,7 @@ export class AppComponent implements OnInit {
   currentComponent: string = '';
   copied = false;
   notasVersaoVisivel = false;
-  ultimaVersao = [...notasVersaoData.versoes].sort((a, b) => b.versao.localeCompare(a.versao))[0];
+  ultimaVersao = [...notasVersaoData.versoes].sort((a, b) => b.versao.localeCompare(a.versao, undefined, { numeric: true }))[0];
   versaoAtual = this.ultimaVersao?.versao ?? '';
   private platformId = inject(PLATFORM_ID);
   favoritos = inject(FavoritosService);
