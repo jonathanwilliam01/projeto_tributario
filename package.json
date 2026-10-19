@@ -1,0 +1,8 @@
+{
+  "name": "projeto-tributario",
+  "private": true,
+  "description": "Redireciona o Atalhos Tributário para o Atalhos Embras.",
+  "engines": {
+    "node": "24.x"
+  }
+}
