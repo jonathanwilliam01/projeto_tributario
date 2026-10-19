@@ -1,5 +1,12 @@
 {
-  "functions": {
-    "api/versao.js": { "maxDuration": 60 }
-  }
+  "framework": null,
+  "installCommand": "echo sem dependencias",
+  "buildCommand": "echo sem build",
+  "outputDirectory": "public",
+  "rewrites": [
+    { "source": "/((?!ngsw-worker\\.js$).*)", "destination": "/index.html" }
+  ],
+  "headers": [
+    { "source": "/ngsw-worker.js", "headers": [{ "key": "Cache-Control", "value": "no-cache" }] }
+  ]
 }
